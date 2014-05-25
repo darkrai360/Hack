@@ -1,3 +1,4 @@
-Select Padre, Hijo from tabla where Hijo in 
-(select Padre from tabla where Hijo in 
-(select Padre from tabla where hijo =Jesus));
+select Padre from tabla as Abuelo where Abuelo.Padre='Juan'(
+select Hijo from tabla as Nieto where Nieto.Padre='Pedro');
+
+
